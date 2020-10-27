@@ -1,40 +1,46 @@
-html,body {
+* {
+    box-sizing: border-box;
+  }
+  html {
+    position: relative;
+    min-height: 100%;
     height: 100%;
-    margin: 0%;
-}
-body{
-    margin: 0;
-    padding: 0;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
     background-image: url(../images/double-bubble.png);
     background-repeat: repeat;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    
+  }
+  
+  #footer {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    font-size: small;
+  }
+#header-bar{
+    background-color: #ffffff !important;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
-.h1,[class*="h-"] {
-    
+#header{
+    background-color:#4aaaa5;
 }
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+#submit{
+    background-color:#4aaaa5; 
+    border-color:#4aaaa5;
 }
-.col,[class*="col-"] {
-      padding-right: 0;
-      padding-left: 0;
+.navbar-dark .navbar-nav .nav-link {
+    color:#777777 !important;
 }
-.h1 {
-    margin-bottom: 0;
+#toggle{
+    background-color:#4aaaa5;
 }
-.row {
-    position:relative;
-    }
-.thumbnail{
-    padding-right: 0;
-}
-.nav,.navbar,.navbar-brand {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-right: 0;
-    
+  .row {
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+     
 }
 .jumbotron {
     background-color:#ffffff;
@@ -44,60 +50,21 @@ body{
 }
 .h3 {
     color:#4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
-#brand-container{
-    background-color: teal;
-    padding: 20px;
+.text{
+    background-color: #4aaaa5;
+    color: white;
     text-align: center;
-   
+    transform: translate(0,-150%);
+    font-size: small;
 }
-.nav,
-.mr-auto {
-flex: 1;
-margin: auto !important;
-display: flex;
-justify-content: space-between;
-float: left;
+img{
+    width:200px;
 }
-footer {
-    position: absolute;
-    height: 60px;
-    line-height: 60px;
-    background-color:#666666;
-    text-align: center;
-    bottom: 0%;
-    width: 100%;
-    left: 0%;
-    flex-shrink: none;
-
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width:100%;
+    }
   }
-  #pine{
-    padding-left:auto;
-    background-color: #ffffff;
-    border-color: #cccccc;
-}
-#pine2 {
-    padding-right: 35%;
-    background-color: #ffffff;
-    border-color: #cccccc;
-}
-  @media screen and (max-width: 768px) {
-    /* The body's bg color will be #333 */
-    /* The wrapper's width will be 600px */
-
-    html {
-        height: 100%;
-    }
-    .jumbotron,.nav,.navbar,.mr-auto {
-        width: 100%;
-    }
-    #pine{
-        padding-left:15px;
-    }
-    #pine2 {
-        padding-right: 15px;
-    }
-    
-
-
-}
